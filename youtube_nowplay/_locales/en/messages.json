@@ -1,0 +1,10 @@
+{
+  "extName": {
+    "message": "Now Playing Pop-up for YouTube™",
+    "description": "Name of the extension"
+  },
+  "extDescription": {
+    "message": "Notifies current song (video title) like music players, for listeners using YouTube™ playlists.",
+    "description": "Description for the extension"
+  }
+}

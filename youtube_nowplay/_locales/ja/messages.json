@@ -1,0 +1,10 @@
+{
+  "extName": {
+    "message": "Now Playing ポップアップ for YouTube™",
+    "description": "Chrome拡張の名前"
+  },
+  "extDescription": {
+    "message": "YouTube™のプレイリスト機能で音楽を再生する際に、音楽プレーヤーのように曲名（動画のタイトル）をポップアップ表示します。",
+    "description": "Chrome拡張の説明"
+  }
+}
