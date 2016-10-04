@@ -1,20 +1,29 @@
 {
-  "name" : "__MSG_extName__",
-  "version" : "1.4",
-  "description" : "__MSG_extDescription__",
+  "manifest_version": 2,
+  "name": "Now Playing Pop-up for YouTube™",
+  "version": "2.0",
+  "description": "Shows pop-up with every new song YouTube plays.",
+  "author": "Yuya Tanaka",
+
   "default_locale": "en",
-  "background_page" : "background.html",
-  "content_scripts" : [
-    {
-      "matches" : [
-        "http://www.youtube.com/watch?*",
-        "https://www.youtube.com/watch?*"
-      ],
-      "js" : ["contentscript.js"],
-      "run_at" : "document_idle",
-      "all_frames" : false
-    }
-  ],
-  "icons": {"16": "16.png", "48": "48.png", "128": "128.png"},
+  "icons": {
+    "16": "16.png",
+    "48": "48.png",
+    "128": "128.png"
+  },
+
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [{
+    "matches": [
+      "http://www.youtube.com/watch?*",
+      "https://www.youtube.com/watch?*"
+    ],
+    "js": ["contentscript.js"],
+    "run_at": "document_idle",
+    "all_frames": false
+  }],
   "permissions": ["notifications"]
 }
