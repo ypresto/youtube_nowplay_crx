@@ -13,7 +13,7 @@
   },
 
   "background": {
-    "scripts": ["background.js"],
+    "scripts": ["eventpage.js"],
     "persistent": false
   },
   "content_scripts": [{
