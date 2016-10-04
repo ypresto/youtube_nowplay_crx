@@ -14,14 +14,14 @@ const sendPopupRequest = function() {
     return
   }
   if (title === lastTitle) return
-  chrome.runtime.sendMessage({currentTitle: title});
+  chrome.runtime.sendMessage({ currentTitle: title });
   lastTitle = title
 }
 
 const observer = new MutationObserver(sendPopupRequest)
 const pageNode = document.getElementById("page")
 if (pageNode) {
-  observer.observe(pageNode, {attributes: true})
+  observer.observe(pageNode, { attributes: true })
   sendPopupRequest()
 } else {
   console.warn("Now Playing Pop-up could not find '#page' tag in YouTube DOM.")

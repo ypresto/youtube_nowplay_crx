@@ -33,6 +33,6 @@ chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
 
 chrome.notifications.onClicked.addListener(function(notificationId) {
   chrome.notifications.clear(notificationId)
-  chrome.tabs.update(senderTabId, {selected: true})
-  chrome.windows.update(senderWindowId, {focused: true})
+  chrome.tabs.update(senderTabId, { selected: true })
+  chrome.windows.update(senderWindowId, { focused: true })
 })
